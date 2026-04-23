@@ -43,12 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creational\Singleton.cs" />
+    <Compile Include="Creational\Abstract Factory\Armor.cs" />
+    <Compile Include="Creational\Abstract Factory\IEquipmentFactory.cs" />
+    <Compile Include="Creational\Abstract Factory\Sword.cs" />
+    <Compile Include="Creational\Abstract Factory\WitcherEquipmentFactory.cs" />
+    <Compile Include="Creational\Builder\CharacterBuilder.cs" />
+    <Compile Include="Creational\Builder\WitherCharacter.cs" />
+    <Compile Include="Creational\Factory Method\Creator.cs" />
+    <Compile Include="Creational\Factory Method\MonsterCreator.cs" />
+    <Compile Include="Creational\Factory\Ghoul.cs" />
+    <Compile Include="Creational\Factory\Griffin.cs" />
+    <Compile Include="Creational\Factory\IMonster.cs" />
+    <Compile Include="Creational\Factory\MonsterFactory.cs" />
+    <Compile Include="Creational\Prototype\MonsterPrototype.cs" />
+    <Compile Include="Creational\Singleton\GameWorld.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_1Patterns.Creational
+namespace Lab_1Patterns.Creational.Factory
 {
-    internal class Singleton
+    public interface IMonster
     {
+        void Attack();
     }
 }

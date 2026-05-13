@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Lab_1Patterns.Behavioral;
 using Lab_1Patterns.Creational;
 using Lab_1Patterns.Creational.Abstract_Factory;
 using Lab_1Patterns.Creational.Builder;
 using Lab_1Patterns.Creational.Factory;
 using Lab_1Patterns.Creational.Singleton;
 using Lab_1Patterns.Structural; // Додано для другої лаби
+using System;
 
 namespace Lab_1Patterns
 {
@@ -63,6 +64,48 @@ namespace Lab_1Patterns
 
             Console.WriteLine("\nНатисніть будь-яку клавішу для виходу...");
             Console.ReadLine();
+
+            using Lab_1Patterns.Behavioral;
+
+            // Додай це в кінець методу Main
+            Console.WriteLine("\n=== Witcher Behavioral Patterns ===");
+
+            // 1. Chain
+            var apprentice = new Apprentice();
+            apprentice.HandleContract("easy");
+
+            // 2. Command
+            var command = new CastSignCommand("Aard");
+            command.Execute();
+
+            // 3. Strategy
+            var combat = new StrongStrike();
+            combat.Strike();
+
+            // 4. State
+            IWitcherState state = new MeditationState();
+            state.Action();
+
+            // 5. Template Method
+            var swallow = new SwallowPotion();
+            swallow.Craft();
+
+            // 6. Observer
+            var village = new Village();
+            village.Notify();
+
+            // 7. Iterator
+            var bag = new TrophyBag();
+            foreach (var item in bag) Console.WriteLine($"Iterator: Знайдено трофей: {item}");
+
+            // 8. Mediator
+            new NoticeMediator().Transmit("Геральт взяв замовлення");
+
+            // 9. Memento
+            new GameState { Level = "Velen" }.Save();
+
+            // 10. Interpreter
+            new RuneInterpreter().Interpret("Rune_Fire");
         }
     }
 }

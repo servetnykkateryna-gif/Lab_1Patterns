@@ -43,6 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\ChainOfResponsibility.cs" />
+    <Compile Include="Behavioral\Command.cs" />
+    <Compile Include="Behavioral\Interpreter.cs" />
+    <Compile Include="Behavioral\Iterator.cs" />
+    <Compile Include="Behavioral\Mediator.cs" />
+    <Compile Include="Behavioral\Memento.cs" />
+    <Compile Include="Behavioral\Observer.cs" />
+    <Compile Include="Behavioral\State.cs" />
+    <Compile Include="Behavioral\Strategy.cs" />
+    <Compile Include="Behavioral\TemplateMethod.cs" />
     <Compile Include="Creational\Abstract Factory\Armor.cs" />
     <Compile Include="Creational\Abstract Factory\IEquipmentFactory.cs" />
     <Compile Include="Creational\Abstract Factory\Sword.cs" />

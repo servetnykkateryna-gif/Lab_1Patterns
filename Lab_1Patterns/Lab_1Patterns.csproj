@@ -59,10 +59,16 @@
     <Compile Include="Creational\Singleton\GameWorld.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\AdapterPattern.cs" />
+    <Compile Include="Structural\BridgePattern.cs" />
+    <Compile Include="Structural\CompositePattern.cs" />
+    <Compile Include="Structural\DecoratorPattern.cs" />
+    <Compile Include="Structural\FacadePattern.cs" />
+    <Compile Include="Structural\FlyweightPattern.cs" />
+    <Compile Include="Structural\ProxyPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
